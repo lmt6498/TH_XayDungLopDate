@@ -33,15 +33,15 @@
             this.year = year;
         }
 
-        this.setDate=function (day,month,year){
+        this.setDate = function (day, month, year) {
             this.day = day;
             this.month = month;
             this.year = year;
         }
-        this.toString=function (day,month,year){
-            this.day = day;
-            this.month = month;
-            this.year = year;
+        this.toString = function (day, month, year) {
+            return this.day + "/" + this.month + "/" +this.year;
+            ;
+
         }
     }
 
@@ -55,11 +55,14 @@
     let year = date.getYear();
     alert(day + "/" + month + "/" + year);
 
-    date.setDate(29,7,2003);
+    date.setDate(29, 7, 2003);
     let day1 = date.getDay();
     let month1 = date.getMonth();
     let year1 = date.getYear();
     alert(day1 + "/" + month1 + "/" + year1);
+    let a = date.toString();
+    alert(a);
+
 
 
 </script>
